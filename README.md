@@ -55,6 +55,12 @@ In this project, we need to create an application in the `Google developer Conso
 
 > Congratulations! you now have successfully incorporated Google OAuth into your application.
 
+**NOTE:** Token gets expired in 1 hour. But what if you want to access users data after an hour.
+
+Lets Fix the Token Expires by generating a new token
+
+### Generating a New Token Setup
+
 ## NPM helpful commands for React Developers
 
 ### `npm start` - Runs the react application on port 3000.
