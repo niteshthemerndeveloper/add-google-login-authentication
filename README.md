@@ -35,6 +35,26 @@ In this project, we need to create an application in the `Google developer Conso
 
 > npm install react-google-login
 
+### Environment Variable Setup
+
+- Create a `.env.local` file in the root folder of your application.
+
+- Add your **OAuth Client Id** using `key-value` pairs
+
+#### Example
+
+> `REACT_APP_CLIENT_ID = "YOUR_ID.apps.googleusercontent.com"`
+
+### Login & Logout Components
+
+1. Create a `Login` component similar to `/src/components/google-auth/Login.js`
+
+2. Create a `Logout` component similar to `/src/components/google-auth/Logout.js`
+
+**Add them in the required location of your app.**
+
+> Congratulations! you now have successfully incorporated Google OAuth into your application.
+
 ## NPM helpful commands for React Developers
 
 ### `npm start` - Runs the react application on port 3000.
