@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# How To Add Google Login to Your React App!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is based on the guide provided by [Sivanesh](https://dev.to/sivaneshs/add-google-login-to-your-react-apps-in-10-mins-4del).
 
-## Available Scripts
+## NPM Packages Used:
 
-In the project directory, you can run:
+1. [create-react-app](https://create-react-app.dev/) - It's an utility to create a react application from scratch.
 
-### `npm start`
+> npx create-react-app coding-enthusiast
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. [react-google-login](https://github.com/anthonyjgrove/react-google-login) - It makes Google OAuth Login process easy to implement.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> npm install react-google-login
 
-### `npm test`
+## Simple Steps to Add Google Login
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this project, we need to create an application in the `Google developer Console`.
 
-### `npm run build`
+1. Go to the [Credentials Page](https://console.cloud.google.com/projectselector2/apis/credentials?pli=1&supportedpurview=project). **Note**: If you're new then _[create a new project]_(https://console.cloud.google.com/projectcreate) by providing your
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Project Name
+- Location `No organisation` is fine if you don't have any `Parent` organisation or folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Click **Create Credentials > OAuth Client Id** : You'll see an Application Type screen.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Select the **Web Application Type**.
+
+4. Add Authorised URIs `can be http://localhost:3000` and Redirect URIs `can be same http://localhost:3000`
+
+> Congratulations! you just created your first OAuth Client id.
+
+## Lets Begin Coding-
+
+### Install
+
+> npm install react-google-login
+
+## NPM helpful commands for React Developers
+
+### `npm start` - Runs the react application on port 3000.
+
+### `npm test` Launches the test runner in the interactive watch mode.
+
+### `npm run build` - It makes the app production ready and creates static assests in `build` folder.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Note: Need to explore this command in future.**
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Best
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Nitesh!
